@@ -1,0 +1,50 @@
+///////////////////////GITHUB CONF///////////// 
+=> Repository https://github.com/afidhu/Native_Dalali_app.git
+
+
+/////////or create a new repository on the command line\\\\\\
+
+echo "# Native_Dalali_app" >> README.md
+
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/afidhu/Native_Dalali_app.git
+git push -u origin main
+
+
+
+//////////////…or push an existing repository from the command line\\\\\\\\\\\\\\\\
+
+git remote add origin https://github.com/afidhu/Native_Dalali_app.git
+git branch -M main
+git push -u origin main
+
+
+
+
+
+///////////// PRODUCTION STEP/////////////////
+
+=> npm install -g eas-cli
+=--- create account in expo.dev, If not have:
+=>eas login
+         {
+            required: username/email, password
+         }
+=> eas whoami
+=>eas build:configure
+
+======FOR ANDROID=====;
+     |||FOR BUILD aab APP||||||||
+   => eas build --platform android   :///This used to build aab applications\\\\
+
+     |||FOR BUILD apk APP||||||||
+       >>>>> Add This in eas.jon inside the build<<<<<<<<
+    "androidapk":{
+      "android":{
+        "buildType":"apk"
+      }
+    }
+=> eas build --platform android --profile androidapk 
