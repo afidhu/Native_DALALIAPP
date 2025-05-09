@@ -116,7 +116,34 @@ This system streamlines the process of renting and managing houses. It includes 
 - 🛠️ Testing and UI polish ongoing
 
 
----
+## 🚀 Production & Deployment
+
+##📦 Production Build Command
+for APK:
+
+eas build -p android --profile androidapk
+
+This project uses **EAS Build** to generate production-ready APKs and App Store builds.
+
+### 🛠 Build Configuration (`eas.json`)
+
+```json
+{
+  "build": {
+    "production": {
+      "autoIncrement": true
+    },
+    "androidapk": {
+      "android": {
+        "buildType": "apk"
+      }
+    }
+  },
+  "cli": {
+    "version": ">= 16.4.1",
+    "appVersionSource": "remote"
+  }
+}
 
 ## 📸 Screenshots (optional)
 _Add screenshots here if needed for visual demo._
