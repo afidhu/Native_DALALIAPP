@@ -115,7 +115,35 @@ This system streamlines the process of renting and managing houses. It includes 
 - 🔄 Renter rental flow in progress  
 - 🛠️ Testing and UI polish ongoing
 
+
 ---
+
+## 📸 Screenshots (optional)
+_Add screenshots here if needed for visual demo._
+
+---
+
+## 🧠 Future Improvements
+
+- Push notifications for agent approvals
+- Online rent payment integration
+- Location-based search and filtering
+- Admin dashboard (web version)
+
+---
+
+## 👨‍💼 About This Project
+
+This app is developed as a full-stack mobile rental platform prototype. It demonstrates real-world features like secure authentication, media uploads, user roles, and mobile optimization — ready for real deployment or scale-up.
+
+---
+
+## 🧪 How to Run Locally
+
+1. Install dependencies:
+```bash
+npm install
+
 
 
 
