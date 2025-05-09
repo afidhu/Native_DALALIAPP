@@ -35,6 +35,95 @@ npm run reset-project
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
 
+
+
+# 🏠 House Rental Platform
+
+A mobile application built with **React Native (Expo SDK 53)** and powered by **Supabase** for backend services. This platform connects **house agents**, **renters**, and an **admin** through a seamless and secure rental ecosystem.
+
+---
+
+## 📱 Platform Overview
+
+This system streamlines the process of renting and managing houses. It includes role-based access control and ensures that only verified agents can list properties.
+
+---
+
+## 👥 User Roles
+
+### 🧑‍💼 Admin
+- Approves or rejects **agent registrations**
+- Manages platform content and user permissions
+
+### 🧑‍💼 Agent
+- Registers and submits a **business account** for verification
+- Can **post house listings** only **after approval**
+- Manages their own listed properties
+
+### 🧑‍💻 Renter
+- Browses listed houses
+- Can **rent** available properties
+- Views agent profiles and contact details
+
+---
+
+## ⚙️ Technologies Used
+
+| Tech Stack        | Details |
+|------------------|---------|
+| **Frontend**     | React Native (Expo SDK 53) |
+| **Backend**      | Supabase (PostgreSQL, Auth, Storage) |
+| **Authentication** | Supabase Auth (Email/Password) |
+| **State Mgmt**   | React Context API |
+| **Navigation**   | `expo-router` |
+
+---
+
+## 🔐 Key Features
+
+- 📄 **Agent Approval Workflow**
+  - Agents must be approved by admin before accessing posting features
+
+- 🏠 **Property Listings**
+  - Agents can post images, descriptions, and prices for rental properties
+
+- 🔍 **House Browsing**
+  - Renters can explore listings with filtering and view agent details
+
+- 📦 **Supabase Storage**
+  - Secure video and image uploads for house media
+
+- 📲 **Mobile-First UX**
+  - Designed with mobile usability and responsiveness in mind
+
+---
+
+## ✅ App Flow Summary
+
+1. **Agent registers** and submits business information
+2. **Admin reviews** and approves the agent
+3. Approved **agent posts houses**
+4. **Renter browses** houses and selects listings to rent
+
+---
+
+## 🚧 Current Status
+
+- ✅ Agent approval system complete  
+- ✅ House posting and image upload functional  
+- ✅ Role-based routing implemented  
+- 🔄 Renter rental flow in progress  
+- 🛠️ Testing and UI polish ongoing
+
+---
+
+## 📂 Project Structure
+
+
+
+
+
+
 ## Learn more
 
 To learn more about developing your project with Expo, look at the following resources:
