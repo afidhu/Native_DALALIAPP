@@ -129,7 +129,7 @@ This system streamlines the process of renting and managing houses. It includes 
 ## 👨‍💼 About This Project
 
 This app is developed as a full-stack mobile rental platform prototype. It demonstrates real-world features like secure authentication, media uploads, user roles, and mobile optimization — ready for real deployment or scale-up.
-[Click HERE TO VIEW MORE DESIGN](https://www.canva.com/design/DAGm_nl76QE/UfTW1QY8Ss9kHByyKo-tWA/edit?utm_content=DAGm_nl76QE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+[Click HERE TO VIEW MORE DESIGN](https://www.canva.com/design/DAGm_nl76QE/Y6yyDmfd4dvQc8_8tCfhOQ/viewutm_content=DAGm_nl76QE&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=hb68636b5ba)
 
 
 ## Learn more
