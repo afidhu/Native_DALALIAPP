@@ -1,5 +1,5 @@
 # Welcome to your Expo app 👋
-![Screenshot](http://github.com/afidhu/Native_DALALIAPP/raw/main/Screenshot%20from%202025-05-10%2000-38-16.png)
+![Screenshot](http://github.com/afidhu/Native_DALALIAPP/raw/main/Screenshot%20from%202025-05-10%2000-38-16.png)          ggergbtaqyyse
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 ## Get started
