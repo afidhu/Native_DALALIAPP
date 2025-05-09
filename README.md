@@ -134,7 +134,14 @@ dalaliApp$/
          package-lock.json 
          Supabaseonf.tsx
       
-
+dalaliApp/
+├── app/ # All screens and routes (expo-router)
+├── components/ # Reusable UI components
+├── assets/ # Images, icons, splash
+├── lib/ # Supabase client and helpers
+├── metro.config.js # Metro bundler config (Expo)
+├── app.json # Expo project config
+├── eas.json # EAS build settings
 
 
 
