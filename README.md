@@ -1,8 +1,7 @@
 # Welcome to your Expo app 👋
+ ![Alt Text](https://github.com/afidhu/Native_DALALIAPP/commit/4b55e865a2a0978f14da260f12f0266699df981d#diff-21812a108cff8e6f668a36c85f6fc6ff4b55bbfe27f1689ffe6fde25d8cc45ac)
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
-![Alt Text](https://github.com/afidhu/Native_DALALIAPP/commit/4b55e865a2a0978f14da260f12f0266699df981d#diff-21812a108cff8e6f668a36c85f6fc6ff4b55bbfe27f1689ffe6fde25d8cc45ac)
-
 ## Get started
 
 1. Install dependencies
