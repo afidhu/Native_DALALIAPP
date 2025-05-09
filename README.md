@@ -117,32 +117,6 @@ This system streamlines the process of renting and managing houses. It includes 
 
 ---
 
-## 📂 Project Structure
-dalaliApp$/
-         app 
-         assets    
-         componets 
-         eslint.config.js 
-         metro.config.js 
-         package.json 
-         README.md       
-         tsconfig.json
-         app.json 
-         command.txt  eas.json 
-         expo-env.d.ts    
-         node_modules  
-         package-lock.json 
-         Supabaseonf.tsx
-      
-dalaliApp/
-├── app/ # All screens and routes (expo-router)
-├── components/ # Reusable UI components
-├── assets/ # Images, icons, splash
-├── lib/ # Supabase client and helpers
-├── metro.config.js # Metro bundler config (Expo)
-├── app.json # Expo project config
-├── eas.json # EAS build settings
-
 
 
 ## Learn more
