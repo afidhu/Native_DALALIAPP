@@ -5,13 +5,14 @@ import { Video, ResizeMode } from 'expo-av';
 import Modal from 'react-native-modal' // Import react-native-modal
 import { UserDataContext } from '../authenticate/UserDataProcider';
 import supabase from '@/Supabaseonf';
+import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 // import { View, Text, FlatList, Image, TouchableOpacity, Dimensions } from 'react-native';
 // import { Video, ResizeMode } from 'expo-av';
 
 
 const AllHouse = ({ locations }) => {
 
-      const { userData } = useContext(UserDataContext)
+    const { userData } = useContext(UserDataContext)
     const { width } = Dimensions.get('window');
     const ITEM_WIDTH = (width) / 100; // adjust 40 for margin/padding
     const MARGIN_BOTOM = (width) / 10
@@ -34,7 +35,7 @@ const AllHouse = ({ locations }) => {
             setModalValue(data)
             setIsavailableHouse(data.is_available)
         }
-        else{
+        else {
             console.log("location id error :", error.message)
         }
 
@@ -44,7 +45,7 @@ const AllHouse = ({ locations }) => {
 
     useEffect(() => {
         const fetchAllPosts = async () => {
-                 try {
+            try {
                 const { data, error } = await supabase
                     .from('posthouse')
                     .select('*')
@@ -88,7 +89,7 @@ const AllHouse = ({ locations }) => {
             }
         }
 
-       
+
     }
 
     useEffect(() => {
@@ -172,7 +173,7 @@ const AllHouse = ({ locations }) => {
 
     return (
         <View  >
-            <Text style={{ fontSize: 24, marginVertical: 10, textAlign: 'center' }}>Home</Text>
+            <Text style={{ fontSize: 24, marginVertical: 1, textAlign: 'center' }}>Home</Text>
 
             <FlatList
                 data={allhouse}
@@ -185,15 +186,15 @@ const AllHouse = ({ locations }) => {
                     return (
                         <ScrollView   >
 
-                            <TouchableOpacity style={{ width: ITEM_WIDTH, margin: 5 }} onPress={() => setModalHandle(item.id)} >
-                                <View style={{ padding: 10, borderWidth: 1, borderRadius: 10, backgroundColor: '#fff' }}>
-                                    <Text style={{ fontSize: 16, fontWeight: 'bold' }}>{item?.title}</Text>
-                                    <Text numberOfLines={2} style={{ fontSize: 12 }}>{item?.content}</Text>
+                            <TouchableOpacity style={{ width: ITEM_WIDTH, margin: 0 }} onPress={() => setModalHandle(item.id)} >
+                                <View style={{ padding: 2, borderWidth: 1, borderRadius: 10, backgroundColor: '#fff' }}>
+                                    {/* <Text style={{ fontSize: 16, fontWeight: 'bold' }}>{item?.title}</Text>
+                                    <Text numberOfLines={2} style={{ fontSize: 12 }}>{item?.content}</Text> */}
 
                                     {isImage && (
                                         <Image
                                             source={{ uri: item.file_url }}
-                                            style={{ width: '100%', height: 120, marginTop: 10, borderRadius: 8 }}
+                                            style={{ width: wp("45%"), height: hp("20%"), marginTop: hp("1%"), borderRadius: 8 }}
                                             resizeMode="cover"
                                         />
                                     )}
@@ -211,7 +212,7 @@ const AllHouse = ({ locations }) => {
                                     )}
                                 </View>
                             </TouchableOpacity>
-           
+
                         </ScrollView>
 
 
@@ -259,7 +260,7 @@ const AllHouse = ({ locations }) => {
                                             color: 'white',
                                             paddingHorizontal: 5,
                                             borderRadius: 5,
-                                     
+
                                         }}
                                     >
                                         {modalValue.is_available}
@@ -270,19 +271,19 @@ const AllHouse = ({ locations }) => {
                         </View>
                     </TouchableOpacity>
                     {
-                        modalValue?.user_id === userData?.id?  ( <View style={styles.avBtn}>
+                        modalValue?.user_id === userData?.id ? (<View style={styles.avBtn}>
 
                             {
-                                is_availableHouse ==='true'? ( <TouchableOpacity style={styles.un_av}  onPress={()=>unvailablehouse(modalValue?.id)}  >
+                                is_availableHouse === 'true' ? (<TouchableOpacity style={styles.un_av} onPress={() => unvailablehouse(modalValue?.id)}  >
                                     <Text style={styles.unav}  >Sold Out</Text>
-                            </TouchableOpacity   >) : (  <TouchableOpacity style={styles.un_av} onPress={() => vailablehouse(modalValue?.id)}  >
-                                <Text style={styles.unav}  >Resume</Text>
-                            </TouchableOpacity>)
+                                </TouchableOpacity   >) : (<TouchableOpacity style={styles.un_av} onPress={() => vailablehouse(modalValue?.id)}  >
+                                    <Text style={styles.unav}  >Resume</Text>
+                                </TouchableOpacity>)
                             }
-                        </View> ) : null
+                        </View>) : null
                     }
 
-                   
+
 
                 </View>
             </Modal>
@@ -295,7 +296,7 @@ const styles = StyleSheet.create({
     text: {
         color: 'white',
         backgroundColor: 'green',
-        // marginTop:29,
+        marginTop: 29,
         alignContent: 'center',
         alignItems: 'center',
         fontWeight: 'bold',

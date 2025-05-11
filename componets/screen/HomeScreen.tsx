@@ -240,7 +240,7 @@ const HomeScreen = () => {
           </ScrollView>
           <AllHouse />
         </View> */}
-        {/* <AllHouse locations={getLocationId} /> */}
+        <AllHouse locations={getLocationId} />
 
       </SafeAreaView>
 
@@ -265,9 +265,9 @@ const styles = StyleSheet.create({
     borderRadius: wp('2%'),
     borderWidth: 2,
     elevation: 50,
-    borderTopEndRadius:20,
-    borderTopLeftRadius:29,
-    borderTopRightRadius:29
+    borderTopEndRadius: 20,
+    borderTopLeftRadius: 29,
+    borderTopRightRadius: 29
 
   },
   category: {
@@ -291,12 +291,12 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     width: wp('95%'),
     backgroundColor: 'plum',
-    height:hp('10%'),
+    height: hp('10%'),
     alignContent: 'center',
     elevation: 20,
-    marginHorizontal:wp('1%'),
-    marginLeft:wp('2%'),
-    marginRight:wp('2%')
+    marginHorizontal: wp('1%'),
+    marginLeft: wp('2%'),
+    marginRight: wp('2%')
 
 
   },
@@ -313,9 +313,9 @@ const styles = StyleSheet.create({
     alignContent: 'center',
     // padding:15,
     paddingHorizontal: wp("5%"),
-    marginHorizontal:wp('1%'),
-    marginLeft:wp('2%'),
-    marginRight:wp('2%'),
+    marginHorizontal: wp('1%'),
+    marginLeft: wp('2%'),
+    marginRight: wp('2%'),
   },
   itemView: {
     // backgroundColor:''
@@ -409,9 +409,9 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     marginTop: hp('7%'),
-    marginHorizontal:wp('1%'),
-    marginLeft:wp('2%'),
-    marginRight:wp('2%'),
+    marginHorizontal: wp('1%'),
+    marginLeft: wp('2%'),
+    marginRight: wp('2%'),
 
 
   }
